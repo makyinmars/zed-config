@@ -39,8 +39,7 @@ Higly inspired by [Jellydn Zed 101 Setup](https://github.com/jellydn/zed-101-set
 - `]d/[d`: Navigate diagnostics
 
 #### File Navigation
-- `space space`: File finder
-- `space f p`: Open recent project
+- `space s f`: File finder
 - `space e`: Toggle file explorer
 - `space /`: Project search
 - `space s w`: Search word under cursor

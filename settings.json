@@ -61,7 +61,7 @@
     "right_padding": 0.15
   },
   "assistant": {
-    "default_profile": "write",
+    "default_profile": "ask",
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-7-sonnet-latest"
@@ -84,18 +84,13 @@
   },
   // Inlay hints preconfigured by Zed: Go, Rust, Typescript and Svelte
   "inlay_hints": {
-    "enabled": true
+    "enabled": false
   },
   // LSP
   "lsp": {
     "tailwindcss-language-server": {
       "settings": {
-        "classAttributes": [
-          "class",
-          "className",
-          "ngClass",
-          "styles"
-        ]
+        "classAttributes": ["class", "className", "ngClass", "styles"]
       }
     }
   },
@@ -121,10 +116,7 @@
           "name": "ruff"
         }
       },
-      "language_servers": [
-        "pyright",
-        "ruff"
-      ]
+      "language_servers": ["pyright", "ruff"]
     }
   },
   // Use zed commit editor
@@ -136,15 +128,8 @@
   },
   // File syntax highlighting
   "file_types": {
-    "Dockerfile": [
-      "Dockerfile",
-      "Dockerfile.*"
-    ],
-    "JSON": [
-      "json",
-      "jsonc",
-      "*.code-snippets"
-    ]
+    "Dockerfile": ["Dockerfile", "Dockerfile.*"],
+    "JSON": ["json", "jsonc", "*.code-snippets"]
   },
   // File scan exclusions, hide on the file explorer and search
   "file_scan_exclusions": [

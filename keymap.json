@@ -107,12 +107,14 @@
       // Save file
       "ctrl-s": "workspace::Save",
       // File finder
-      "space space": "file_finder::Toggle",
+      "space s f": "file_finder::Toggle",
+      "space space": "tab_switcher::Toggle", // Buffer list (open files)
       // Project search
       "space /": "pane::DeploySearch",
       // TODO: Open other files
       // Show project panel with current file
       "space e": "pane::RevealInProjectPanel",
+      "space w": "buffer_search::Deploy",
       // Add these new bindings alongside your existing ones
       "space w |": "pane::SplitRight",
       "space w _": "pane::SplitDown"
@@ -123,7 +125,7 @@
     "context": "EmptyPane || SharedScreen",
     "bindings": {
       // Open file finder
-      "space space": "file_finder::Toggle",
+      "space s f": "file_finder::Toggle",
       // Open recent project
       "space f p": "projects::OpenRecent"
     }
