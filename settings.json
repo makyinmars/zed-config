@@ -26,7 +26,7 @@
   "base_keymap": "VSCode",
   "theme": "Tokyo Night",
   "ui_font_size": 16,
-  "buffer_font_size": 14,
+  "buffer_font_size": 12,
   // Finder model width
   "file_finder": {
     "modal_width": "medium"
@@ -61,7 +61,7 @@
     "right_padding": 0.15
   },
   "assistant": {
-    "default_profile": "ask",
+    "default_profile": "write",
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-7-sonnet-latest"

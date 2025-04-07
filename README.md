@@ -45,8 +45,8 @@ Higly inspired by [Jellydn Zed 101 Setup](https://github.com/jellydn/zed-101-set
 - `space s w`: Search word under cursor
 
 #### Panel Management
-- `space w |`: Split right
-- `space w _`: Split down
+- `space |`: Split right
+- `space _`: Split down
 - `Ctrl + \`: Toggle terminal
 - `Cmd + b`: Toggle left dock
 
