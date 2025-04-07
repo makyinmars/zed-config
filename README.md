@@ -2,6 +2,8 @@
 
 This repository contains my personal configuration for the [Zed Editor](https://zed.dev/). It includes customized keymaps, settings, and various optimizations for a Vim-like editing experience.
 
+Higly inspired by [Jellydn Zed 101 Setup](https://github.com/jellydn/zed-101-setup)
+
 ## Features
 
 ### 🎨 Theme & Visual Settings
