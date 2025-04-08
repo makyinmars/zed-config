@@ -8,7 +8,7 @@ Higly inspired by [Jellydn Zed 101 Setup](https://github.com/jellydn/zed-101-set
 
 ### 🎨 Theme & Visual Settings
 - Theme: Tokyo Night
-- Font: Berkeley Mono Variable (14px for buffer, 16px for UI)
+- Font: Berkeley Mono Variable (15px for buffer, 16px for UI)
 - Relative line numbers enabled
 - Rainbow indent guides
 - Hidden scrollbar
