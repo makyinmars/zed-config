@@ -21,9 +21,14 @@
       // Search word under cursor
       "space s w": "pane::DeploySearch",
       // Chat with AI
-      "space a a": "assistant::ToggleFocus",
+      "space a a": "agent::ToggleFocus",
+      "space c t": "editor::ShowEditPrediction",
+      "space a q": "assistant::QuoteSelection",
       // Go to file with `gf`
-      "g f": "editor::OpenExcerpts"
+      "g f": "editor::OpenExcerpts",
+      // Enhanced Diagnostics (Neovim-inspired)
+      "space d e": "editor::Hover",
+      "space d q": "diagnostics::Deploy"
     }
   },
   {
@@ -79,6 +84,15 @@
       "s S": "project_symbols::Toggle",
       // Diagnostic
       "space x x": "diagnostics::Deploy",
+      // Enhanced Window Management (Neovim-inspired)
+      "space w w": "workspace::ActivateNextPane",
+      "space w d": "pane::CloseActiveItem",
+      "space w -": "pane::SplitDown",
+      "space w |": "pane::SplitRight",
+      // Code Folding (Neovim-inspired)
+      "space z a": "editor::Fold",
+      "space z o": "editor::UnfoldLines",
+      "space z c": "editor::FoldAll",
       // +Git
       // Git prev/next hunk
       "] h": "editor::GoToHunk",
@@ -104,8 +118,9 @@
       // TODO: Open other files
       // Show project panel with current file
       "space e": "pane::RevealInProjectPanel",
-      "space w": "buffer_search::Deploy",
-      // Add these new bindings alongside your existing ones
+      // Buffer search (renamed from conflicting space w)
+      "space s b": "buffer_search::Deploy",
+      // Window splits (keep existing shortcuts)
       "space |": "pane::SplitRight",
       "space _": "pane::SplitDown"
     }
@@ -165,7 +180,9 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown"
+      "ctrl-j": "workspace::ActivatePaneDown",
+      // Enhanced terminal escape (Neovim-inspired)
+      "escape escape": "workspace::ToggleBottomDock"
     }
   },
   // File panel (netrw)

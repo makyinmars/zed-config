@@ -7,8 +7,8 @@ Higly inspired by [Jellydn Zed 101 Setup](https://github.com/jellydn/zed-101-set
 ## Features
 
 ### 🎨 Theme & Visual Settings
-- Theme: Tokyo Night
-- Font: Berkeley Mono Variable (15px for buffer, 16px for UI)
+- Theme: Gruvbox Dark Hard
+- Font: Berkeley Mono Variable (14px for both buffer and UI)
 - Relative line numbers enabled
 - Rainbow indent guides
 - Hidden scrollbar
@@ -37,6 +37,8 @@ Higly inspired by [Jellydn Zed 101 Setup](https://github.com/jellydn/zed-101-set
 - `gt`: Go to type definition
 - `gr`: Find all references
 - `]d/[d`: Navigate diagnostics
+- `space d e`: Show diagnostic hover
+- `space d q`: Open diagnostics panel
 
 #### File Navigation
 - `space s f`: File finder
@@ -47,13 +49,20 @@ Higly inspired by [Jellydn Zed 101 Setup](https://github.com/jellydn/zed-101-set
 #### Panel Management
 - `space |`: Split right
 - `space _`: Split down
+- `space w |`: Split right (prefix-based)
+- `space w -`: Split down (prefix-based)
+- `space w w`: Switch to other pane
+- `space w d`: Close active pane
 - `Ctrl + \`: Toggle terminal
+- `escape escape`: Quick terminal exit
 - `Cmd + b`: Toggle left dock
 
 ### 🤖 AI Integration
-- Default AI: Claude 3 Sonnet (zed.dev)
+- Default AI: Claude Sonnet 4 Thinking (zed.dev)
+- Agent profile configured with comprehensive tool access
 - Ollama configuration included (commented)
 - `space a a`: Toggle AI assistant
+- `space a q`: Quote selection for AI
 - Multiple AI profiles supported
 
 ### 🔧 Language Support
@@ -74,8 +83,37 @@ Higly inspired by [Jellydn Zed 101 Setup](https://github.com/jellydn/zed-101-set
 - Project panel with git status
 - Outline panel docked to right
 
+### 🔄 Code Folding (NEW)
+- `space z a`: Toggle fold at cursor
+- `space z o`: Unfold lines
+- `space z c`: Fold all
+- Neovim-consistent folding patterns
+
+### 🔧 Neovim Consistency
+This configuration maintains muscle memory consistency with Neovim LazyVim:
+- Diagnostic navigation (`]d`/`[d`) matches exactly
+- Window management (`space w` prefix) mirrors Neovim
+- Insert mode escapes (`kj`/`jk`) work identically
+- Code folding (`space z` prefix) follows Neovim conventions
+- Space-based leader key system consistent across editors
+
 ## Installation
 
 1. Clone this repository to your Zed config directory:
 ```bash
 git clone https://github.com/makyinmars/zed-config ~/.config/zed
+```
+
+2. The configuration includes:
+   - Enhanced keymap.json with Neovim-inspired patterns
+   - Optimized settings.json for productivity
+   - CLAUDE.md for AI assistant guidance
+   - Comprehensive documentation
+
+## Key Features
+
+- **Neovim Consistency**: Maintains familiar keybinding patterns
+- **Enhanced Diagnostics**: Improved workflow for error navigation
+- **Code Folding**: Basic folding support with intuitive keybindings
+- **AI Integration**: Advanced agent configuration with comprehensive tools
+- **Window Management**: Efficient pane splitting and navigation
