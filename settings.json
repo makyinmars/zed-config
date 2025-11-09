@@ -16,8 +16,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "ui_font_family": "Berkeley Mono Variable",
   "git_panel": {
-    "dock": "left"
+    "dock": "right"
   },
   "icon_theme": "Colored Zed Icons Theme Light",
   "features": {
@@ -27,17 +28,10 @@
   "theme": "Gruvbox Dark Hard",
   "ui_font_size": 14,
   "buffer_font_size": 14,
-  // Finder model width
-  "file_finder": {
-    "modal_width": "medium"
-  },
   // NOTE: Change the font family to your preference
   "buffer_font_family": "Berkeley Mono Variable",
   // Vim mode settings
   "vim_mode": true,
-  "vim": {
-    "enable_vim_sneak": true
-  },
   // Code folding (limited options available currently)
   // Note: Folding is primarily controlled via keybindings in keymap.json
   // use relative line numbers
@@ -100,7 +94,7 @@
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-sonnet-4-thinking"
-    },
+    }
   },
   // Uncomment below to use local AI with Ollama, refer https://zed.dev/docs/language-model-integration?highlight=ollama#using-ollama-on-macos
   // "assistant": {
@@ -118,13 +112,18 @@
   },
   // Inlay hints preconfigured by Zed: Go, Rust, Typescript and Svelte
   "inlay_hints": {
-    "enabled": false
+    "enabled": true
   },
   // LSP
   "lsp": {
     "tailwindcss-language-server": {
       "settings": {
-        "classAttributes": ["class", "className", "ngClass", "styles"]
+        "classAttributes": [
+          "class",
+          "className",
+          "ngClass",
+          "styles"
+        ]
       }
     }
   },
@@ -133,24 +132,18 @@
     "TypeScript": {
       // Refer https://github.com/jellydn/ts-inlay-hints for how to setup for Neovim and VSCode
       "inlay_hints": {
-        "enabled": false,
+        "enabled": true,
         "show_parameter_hints": false,
-        "show_other_hints": false,
-        "show_type_hints": false
+        "show_other_hints": true,
+        "show_type_hints": true
       }
     },
     "Python": {
-      "format_on_save": {
-        "language_server": {
-          "name": "ruff"
-        }
-      },
-      "formatter": {
-        "language_server": {
-          "name": "ruff"
-        }
-      },
-      "language_servers": ["pyright", "ruff"]
+      "formatter": "language_server",
+      "language_servers": [
+        "pyright",
+        "ruff"
+      ]
     }
   },
   // Use zed commit editor
@@ -162,8 +155,15 @@
   },
   // File syntax highlighting
   "file_types": {
-    "Dockerfile": ["Dockerfile", "Dockerfile.*"],
-    "JSON": ["json", "jsonc", "*.code-snippets"]
+    "Dockerfile": [
+      "Dockerfile",
+      "Dockerfile.*"
+    ],
+    "JSON": [
+      "json",
+      "jsonc",
+      "*.code-snippets"
+    ]
   },
   // File scan exclusions, hide on the file explorer and search
   "file_scan_exclusions": [
@@ -191,8 +191,8 @@
   ],
   // Turn off telemetry
   "telemetry": {
-    "diagnostics": true,
-    "metrics": true
+    "diagnostics": false,
+    "metrics": false
   },
   // Move all panel to the right
   "project_panel": {
@@ -208,9 +208,6 @@
   },
   // Move some unnecessary panels to the left
   "notification_panel": {
-    "dock": "left"
-  },
-  "chat_panel": {
     "dock": "left"
   }
 }
